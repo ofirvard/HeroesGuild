@@ -1,0 +1,44 @@
+[
+  {
+    "className": "Warrior",
+    "dexterityGrowth": 1,
+    "experienceMultiplier": 1.0,
+    "healthGrowth": 1,
+    "heroClass": "WARRIOR",
+    "intellectGrowth": 1,
+    "sexes": [
+      "FEMALE",
+      "MALE"
+    ],
+    "strengthGrowth": 1,
+    "threatGrowth": 1
+  },
+  {
+    "className": "Fire Mage",
+    "dexterityGrowth": 1,
+    "experienceMultiplier": 1.0,
+    "healthGrowth": 1,
+    "heroClass": "FIREMAGE",
+    "intellectGrowth": 1,
+    "sexes": [
+      "FEMALE",
+      "MALE"
+    ],
+    "strengthGrowth": 1,
+    "threatGrowth": 1
+  },
+  {
+    "className": "Rogue",
+    "dexterityGrowth": 1,
+    "experienceMultiplier": 1.0,
+    "healthGrowth": 1,
+    "heroClass": "ROGUE",
+    "intellectGrowth": 1,
+    "sexes": [
+      "FEMALE",
+      "MALE"
+    ],
+    "strengthGrowth": 1,
+    "threatGrowth": 1
+  }
+]
