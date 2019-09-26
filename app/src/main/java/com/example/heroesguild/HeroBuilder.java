@@ -58,7 +58,7 @@ public class HeroBuilder {
         hero = new Hero(random.nextInt(), returnRandomName(sex), heroClass, sex, null, level,
                 getExperienceToNextLevel(level, heroTemplate.experienceMultiplier), getSecretPointBonus(random),
                 heroTemplate.ticksTillAttack, );
-//Math.round()
+        Math.round();
         return hero;
     }
 
