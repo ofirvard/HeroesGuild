@@ -8,16 +8,20 @@ import com.google.gson.Gson;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 //        HeroBuilder.heroTemplates = JsonReadWrite.loadHeroTemplates(getApplicationContext());
-        int x=3;
-        double a = ((int) ((x / 11) * 10));
-        int b = 0;
+
+        Hero hero1 = HeroBuilder.buildLevelOneHero(HeroBuilder.HeroClass.WARRIOR, getApplicationContext());
+        Hero hero2 = HeroBuilder.buildLevelOneHero(HeroBuilder.HeroClass.WARRIOR, getApplicationContext());
+        Hero hero3 = HeroBuilder.buildLevelOneHero(HeroBuilder.HeroClass.WARRIOR, getApplicationContext());
+        int x = 3;
     }
 }

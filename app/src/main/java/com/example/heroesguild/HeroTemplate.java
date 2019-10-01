@@ -3,7 +3,8 @@ package com.example.heroesguild;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HeroTemplate {
+public class HeroTemplate
+{
     HeroBuilder.HeroClass heroClass;
     String className;
     double experienceMultiplier;
@@ -18,6 +19,6 @@ public class HeroTemplate {
     int dexterityGrowth;
 
     List<HeroBuilder.Sex> sexes;
-    List<Trait> traits;
-
+//    List<Trait> traits;
+// TODO: 9/28/2019 add resistances and damage types 
 }
