@@ -1,20 +1,8 @@
 package com.example.heroesguild;
 
-import java.util.Random;
+import com.example.heroesguild.enums.Stat;
 
-public class Stats
-{
-    static enum Stat
-    {
-        HEALTH, THREAT, STRENGTH, INTELLECT, DEXTERITY;
-
-        public static Stat getRandomStat()
-        {
-            Random random = new Random();
-            return values()[random.nextInt(values().length)];
-        }
-    }
-
+public class Stats {
     private final int BASE_POINTS_PER_LEVEL = 50;
 
     private int secretPointBonus;
@@ -34,25 +22,22 @@ public class Stats
     private int intellectGrowth;
     private int dexterityGrowth;
 
-    void increaseStatGrowthByOne(Stat stat)
-    {
-        switch (stat)
-        {
+    public void increaseStatGrowthByOne(Stat stat) {
+        switch (stat) {
             case HEALTH:
-                healthGrowth+=3;
+                healthGrowth += 3;
             case THREAT:
-                threatGrowth+=3;
+                threatGrowth += 3;
             case STRENGTH:
-                strengthGrowth+=3;
+                strengthGrowth += 3;
             case DEXTERITY:
-                dexterityGrowth+=3;
+                dexterityGrowth += 3;
             case INTELLECT:
-                intellectGrowth+=3;
+                intellectGrowth += 3;
         }
     }
 
-    public Stats(int secretPointBonus, int healthGrowth, int threatGrowth, int strengthGrowth, int intellectGrowth, int dexterityGrowth)
-    {
+    public Stats(int secretPointBonus, int healthGrowth, int threatGrowth, int strengthGrowth, int intellectGrowth, int dexterityGrowth) {
         this.secretPointBonus = secretPointBonus;
         this.healthGrowth = healthGrowth;
         this.threatGrowth = threatGrowth;
@@ -67,8 +52,7 @@ public class Stats
         this.dexterity = 0;
     }
 
-    public void levelUpStats()
-    {
+    public void levelUpStats() {
         int pointsToSpend = BASE_POINTS_PER_LEVEL + secretPointBonus;
         int totalGrowth = this.healthGrowth +
                 this.threatGrowth +
@@ -83,34 +67,28 @@ public class Stats
         this.dexterity += Math.round((double) this.dexterityGrowth / (double) totalGrowth * pointsToSpend);
     }
 
-    public int getHealth()
-    {
+    public int getHealth() {
         return health;
     }
 
-    public int getThreat()
-    {
+    public int getThreat() {
         return threat;
     }
 
-    public int getStrength()
-    {
+    public int getStrength() {
         return strength;
     }
 
-    public int getIntellect()
-    {
+    public int getIntellect() {
         return intellect;
     }
 
-    public int getDexterity()
-    {
+    public int getDexterity() {
         return dexterity;
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Stats{" +
                 ", secretPointBonus=" + secretPointBonus +
                 ", health=" + health +

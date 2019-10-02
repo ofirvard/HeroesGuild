@@ -9,9 +9,33 @@
     "strengthGrowth": 3,
     "intellectGrowth": 1,
     "dexterityGrowth": 1,
+    "strengthPercent": 1,
+    "intellectPercent": 0.1,
+    "dexterityPercent": 0.4,
+    "attackType": "PHYSICAL",
     "sexes": [
       "FEMALE",
       "MALE"
-    ]
+    ],
+    "resistances": {
+      "resistances": [
+        {
+          "first": "ARCANE",
+          "second": 1.0
+        },
+        {
+          "first": "FIRE",
+          "second": 1.0
+        },
+        {
+          "first": "ICE",
+          "second": 1.0
+        },
+        {
+          "first": "PHYSICAL",
+          "second": 1.0
+        }
+      ]
+    }
   }
 ]
